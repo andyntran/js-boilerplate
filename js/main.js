@@ -19,6 +19,7 @@ requirejs.config({
 			  '//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min'
 			, 'libs/jquery/jquery-1.8.1.min'
 		]
+		, jqueryExt: 'libs/jquery/jquery-ext'
 		, underscore: [
 			  '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min'
 			, 'libs/underscore/underscore-1.3.3.min'
@@ -49,11 +50,13 @@ requirejs.config({
 	, shim: {
 		  'backbone': ['jquery', 'underscore']
 		, 'backboneFix': ['backbone']
+		, 'jqueryExt': ['jquery']
 		, 'router': [
 			  'modernizr'
 			, 'jquery'
+			, 'jqueryExt'
 			, 'backbone'
-			, 'backboneFix'
+			, 'backboneFix'			
 
 			// TODO: Uncomments the following to includes loading additional libraries
 			// , 'jqueryui'
